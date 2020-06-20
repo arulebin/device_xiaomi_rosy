@@ -1,3 +1,6 @@
+# Block IO
+/dev/blkio(/.*)?                                u:object_r:blkio:s0
+
 # Camera
 /data/vendor/qcam(/.*)?                         u:object_r:vendor_camera_data_file:s0
 
