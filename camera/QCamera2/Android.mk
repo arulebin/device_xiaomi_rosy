@@ -81,8 +81,8 @@ LOCAL_C_INCLUDES := \
         $(LOCAL_PATH)/util \
         $(LOCAL_PATH)/HAL3 \
         hardware/libhardware/include/hardware \
-        $(call project-path-for,qcom-media)/libstagefrighthw \
-        $(call project-path-for,qcom-media)/mm-core/inc \
+        device/xiaomi/rosy/qcom-caf/media/libstagefrighthw \
+        device/xiaomi/rosy/qcom-caf/media/mm-core/inc \
         system/core/include/cutils \
         system/core/include/system \
         system/media/camera/include/system
@@ -107,7 +107,7 @@ endif
 #LOCAL_STATIC_LIBRARIES := libqcamera2_util
 LOCAL_STATIC_LIBRARIES := android.hardware.camera.common@1.0-helper
 LOCAL_C_INCLUDES += \
-        $(call project-path-for,qcom-display)/libqservice
+        device/xiaomi/rosy/qcom-caf/display/libqservice
 LOCAL_SHARED_LIBRARIES := liblog libhardware libutils libcutils libdl libsync
 LOCAL_SHARED_LIBRARIES += libmmcamera_interface libmmjpeg_interface libui libcamera_metadata
 LOCAL_SHARED_LIBRARIES += libqdMetaData libqservice libbinder
