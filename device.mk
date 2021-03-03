@@ -22,6 +22,8 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-styx
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+PRODUCT_SOONG_NAMESPACES += packages/apps/Bluetooth
+
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
