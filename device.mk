@@ -16,6 +16,8 @@
 
 $(call inherit-product, vendor/xiaomi/rosy/rosy-vendor.mk)
 
+TARGET_USES_QCOM_CHIPSET := true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-styx
