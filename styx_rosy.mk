@@ -11,6 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 
 # Inherit some common Styx stuff
 $(call inherit-product, vendor/styx/config/common.mk)
+STYX_BUILD_VARIANT := OFFICIAL
 
 # Pixel customization
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
