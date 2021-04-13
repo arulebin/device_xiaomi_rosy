@@ -45,7 +45,8 @@ ro.bluetooth.hfp.ver=1.7 \
 ro.qualcomm.bt.hci_transport=smd
 
 # Blur
-ro.sf.blurs_are_expensive=1
+PRODUCT_PRODUCT_PROPERTIES += \
+ro.sf.blurs_are_expensive=1 \
 ro.surface_flinger.supports_background_blur=1
 
 # Camera
