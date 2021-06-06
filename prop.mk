@@ -138,6 +138,14 @@ persist.gps.qc_nlp_in_use=1 \
 persist.loc.nlp_name=com.qualcomm.location \
 ro.gps.agps_provider=1
 
+# LMKD
+PRODUCT_PRODUCT_PROPERTIES += \
+ro.lmk.critical_upgrade=true \
+ro.lmk.upgrade_pressure=40 \
+ro.lmk.downgrade_pressure=60 \
+ro.lmk.thrashing_limit=30 \
+ro.lmk.thrashing_limit_decay=50
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
