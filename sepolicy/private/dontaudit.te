@@ -6,3 +6,14 @@ dontaudit linkerconfig self:capability kill;
 
 # b/152468658
 dontaudit vdc self:capability kill;
+
+# Supress logspams
+
+# Only allow Read access to debugfs on userdebug/eng builds
+# system/sepolicy/private/storaged.te#L28
+dontaudit storaged debugfs_mmc:dir search;
+dontaudit storaged debugfs_mmc:file r_file_perms;
+
+# Only allow system server to read dmesg on userdebug/eng builds
+# system/sepolicy/private/system_server.te#L843
+dontaudit system_server kernel:system syslog_read;
