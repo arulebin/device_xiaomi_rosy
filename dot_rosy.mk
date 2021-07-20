@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
 # Inherit some common PixelExperience stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Pixel customization
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
@@ -21,7 +21,7 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := false
 $(call inherit-product, device/xiaomi/rosy/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_rosy
+PRODUCT_NAME := dot_rosy
 PRODUCT_DEVICE := rosy
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5
@@ -35,10 +35,3 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_GAPPS_ARCH := arm64
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# Cipher
-CIPHER_OFFICIAL := true
-CIPHER_GAPPS := true
-TARGET_FACEUNLOCK_SUPPORTED := true
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.cipher.maintainer= Ebin
