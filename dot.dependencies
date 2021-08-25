@@ -1,14 +1,10 @@
 [
    {
-      "remote":"github",
-      "branch":"eleven",
-      "repository":"Pulkit077/kernel_xiaomi_rosy",
+      "repository":"kernel_xiaomi_rosy",
       "target_path":"kernel/xiaomi/rosy"
    },
    {
-      "remote":"github",
-      "branch":"eleven",
-      "repository":"Pulkit077/vendor_xiaomi_rosy",
+      "repository":"vendor_xiaomi_rosy",
       "target_path":"vendor/xiaomi/rosy"
    },
    {
