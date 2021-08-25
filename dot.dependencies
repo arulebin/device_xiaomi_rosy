@@ -2,22 +2,24 @@
    {
       "remote":"github",
       "branch":"eleven",
-      "repository":"PixelExperience-Devices/kernel_xiaomi_rosy",
+      "repository":"Pulkit077/kernel_xiaomi_rosy",
       "target_path":"kernel/xiaomi/rosy"
    },
    {
-      "remote":"pixel-devices-blobs",
+      "remote":"github",
       "branch":"eleven",
-      "repository":"vendor_xiaomi_rosy",
+      "repository":"Pulkit077/vendor_xiaomi_rosy",
       "target_path":"vendor/xiaomi/rosy"
    },
    {
-      "repository" : "pulkit077/gcc-arm64",
+      "remote":"github",
+      "repository" : "Pulkit077/gcc-arm64",
       "target_path": "prebuilts/gcc/linux-x86/aarch64/aarch64-elf",
       "branch"     : "gcc-master"
    },
    {
-      "repository" : "pulkit077/gcc-arm",
+      "remote":"github",
+      "repository" : "Pulkit077/gcc-arm",
       "target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi",
       "branch"     : "gcc-master"
    }
